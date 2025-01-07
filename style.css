@@ -279,8 +279,9 @@ p img {
     height: 24px; /* Adjust height */
     margin-right: 8px; /* Add some space between the image and the text */
     vertical-align: middle; /* Align the image with the middle of the text */
-    background-color: transparent;
 }
+
+
 
 .footer-logo {
     width: 300px;
@@ -355,15 +356,18 @@ footer p {
     .footer-right {
         text-align: right;
         width: 100%;
-        font-size: 10px;
+        font-size: 9px;
     }
     .footer-left{
         text-align: left;
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .footer-logo {
         width: 130px;
+    }
+    .copyright {
+        font-size: 9px;
     }
 }
 
@@ -447,12 +451,12 @@ footer p {
     .footer-right {
         text-align: right;
         width: 100%;
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .footer-left {
         text-align: left;
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .footer-logo {
@@ -460,7 +464,7 @@ footer p {
     }
 
     .copyright {
-        font-size: 10px;
+        font-size: 9px;
     }
 }
 
@@ -544,12 +548,12 @@ footer p {
     .footer-right {
         text-align: right;
         width: 100%;
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .footer-left {
         text-align: left;
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .footer-logo {
@@ -557,7 +561,7 @@ footer p {
     }
 
     .copyright {
-        font-size: 10px;
+        font-size: 9px;
     }
 }
 
@@ -638,3 +642,32 @@ footer p {
 
 
 /* samsung */
+@media (max-width: 1024px) { /* Tablets and large screens */
+    p img {
+        width: 12px; /* Adjust for medium screens */
+        height: 12px; /* Adjust for medium screens */
+    }
+}
+
+@media (max-width: 768px) { /* Tablets and smaller devices */
+    p img {
+        width: 10px; /* Adjust for smaller tablets */
+        height: 10px; /* Adjust for smaller tablets */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+    p img {
+        width: 10px; /* Adjust for small screens like phones */
+        height: 10px; /* Adjust for small screens */
+        margin-right: 5px; /* Reduce space for small screens */
+    }
+}
+
+@media (max-width: 360px) { /* Extra small devices */
+    p img {
+        width: 7px; /* Smaller size for very small screens */
+        height: 7px; /* Maintain small height */
+        margin-right: 4px; /* Further reduce margin */
+    }
+}
