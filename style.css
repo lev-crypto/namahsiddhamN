@@ -671,3 +671,53 @@ footer p {
         margin-right: 4px; /* Further reduce margin */
     }
 }
+
+
+
+#developer-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adds some space between items */
+    background: #8e8e8e87; /* White background with transparency */
+    backdrop-filter: blur(10px); /* Blurs the background */
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff; /* Text color */
+    margin-top: 5px;
+}
+
+#developer-details a {
+    text-decoration: none;
+    color: #016e05; /* Green color for links */
+    font-weight: bold;
+}
+
+#developer-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    #developer-details {
+        font-size: 13px;
+        padding: 9px;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 768px) {
+    #developer-details {
+        font-size: 12px;
+        padding: 8px;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 480px) {
+    #developer-details {
+        font-size: 10px;
+        padding: 6px;
+        color: #ffffff;
+    }
+}
