@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Company Logo" class="nav-logo">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home" class="slider">
+        <div class="slide">
+            <img src="images\img1.png" alt="Image 1" class="slide-image">
+            <div class="slide-text">Innovative Solutions for Every Need</div>
+        </div>
+        <div class="slide">
+            <img src="images\img2.png" alt="Image 2" class="slide-image">
+            <div class="slide-text">Tailored for Your Success</div>
+        </div>
+        <div class="slide">
+            <img src="images\img3.png" alt="Image 3" class="slide-image">
+            <div class="slide-text">Empowering Your Future</div>
+        </div>
+    </section>    
+    
+    
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <a href="bulk-industrial-solvent.html">
+                    <img src="images/img6.png" alt="Bulk Industrial Solvent">
+                    <h3>Bulk Industrial Solvent</h3>
+                </a>
+            </div>
+            <div class="product">
+                <a href="retail-wholesale-solvent.html">
+                    <img src="images/img7.jpg" alt="Retail Wholesale Solvent">
+                    <h3>Retail Wholesale Solvent</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a leading supplier of high-quality solvents, catering to both industrial and retail sectors. Our commitment to innovation, sustainability, and customer satisfaction drives us to deliver top-notch products tailored to your needs. Our team works tirelessly to ensure that our solvents meet the highest standards of purity and performance.</p>
+        <p>With years of industry experience, we are dedicated to providing solutions that not only meet but exceed your expectations.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form  action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f86ab399-1d5b-422c-8fde-288a29cbd321">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="phone" placeholder="Your Phone Number" required>
+            <select name="product-interest" id="product-interest" required onchange="showProductList()">
+                <option value="">Select a Product Interest</option>
+                <option value="industrial-solvent">Industrial Solvent</option>
+                <option value="retail-solvent">Retail Wholesale Solvent</option>
+            </select>
+            <div id="product-list-container" style="display: none;">
+                <select name="specific-product" id="specific-product" required>
+                    <option value="">Select a Product</option>
+                    <option value="product1">Product 1</option>
+                    <option value="product2">Product 2</option>
+                    <option value="product3">Product 3</option>
+                    <option value="product4">Product 4</option>
+                    <option value="product5">Product 5</option>
+                    <option value="product6">Product 6</option>
+                    <option value="product7">Product 7</option>
+                    <option value="product8">Product 8</option>
+                </select>
+            </div>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237145.70106898717!2d77.2410800918085!3d23.199323872837223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e1!3m2!1sen!2sin!4v1736230425353!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo"><img src="images/logo.png" alt="" class="footer-logo"></div>
+                <p>Providing quality solvents for industrial and retail needs since 2025.</p>
+            </div>
+            <div class="footer-right">
+                <h3>Get in Touch</h3>
+                <p>Namah Siddham Chemicals Pvt Ltd, Reg office, A-3, Hinotiya Alam, Bhopal (462042)</p>
+                <p>Phone: 7803932598</p>
+                <p>Fax: (123) 456-7891</p>
+                <p>Business Hours: Mon-Fri, 9am-5pm</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; NamahSiddham 2025
+        </div>
+    </footer>
+</body>
+</html>
