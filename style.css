@@ -85,13 +85,29 @@ nav ul li a:hover {
 }
 
 /* Slide text */
-.slide-text {
+.slide-text1 {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: white;
-    font-size: 24px;
-    animation: fadeIn 2s;
+    color: rgb(250, 244, 209);
+    font-size: 27px;
+    animation: fadeIn 1.5s;
+}
+.slide-text2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    animation: fadeIn 1.5s;
+}
+.slide-text3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgb(250, 244, 209);
+    font-size: 27px;
+    animation: fadeIn 1.5s;
 }
 
 /* Breathe out animation for images */
@@ -177,6 +193,7 @@ nav ul li a:hover {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .product p {
@@ -381,7 +398,7 @@ footer p {
     }
 
     nav ul li a {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     /* Center the product images */
@@ -478,7 +495,7 @@ footer p {
     }
 
     nav ul li a {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /* Center the product images */
