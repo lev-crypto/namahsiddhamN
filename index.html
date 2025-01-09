@@ -70,27 +70,31 @@
             <input type="text" name="name" placeholder="Your Name" pattern="[A-Za-z\s]+" title="Only alphabets are allowed" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <input type="text" name="phone" placeholder="Your Phone Number" pattern="[0-9]+" title="Only numbers are allowed" required>
-            <select name="product-interest" id="product-interest" required onchange="showProductList()">
-                <option value="">Select a Product Interest</option>
-                <option value="industrial-solvent">Industrial Solvent</option>
-                <option value="retail-solvent">Retail Wholesale Solvent</option>
+            <select name="product-interest" id="product-interest" onchange="showProductList()" required>
+                <option value="">Select Product Interest</option>
+                <option value="Industrial Solvent">Industrial Solvent</option>
+                <option value="Retail Wholesale Solvent">Retail/Wholesale Solvent</option>
             </select>
             <div id="product-list-container" style="display: none;">
                 <select name="specific-product" id="specific-product" required>
                     <option value="">Select a Product</option>
-                    <option value="Acetone">Acetone</option>
-                    <option value="Methylene Dichloride">Methylene Dichloride </option>
-                    <option value="Xylenes">Xylenes</option>
-                    <option value="Ethanol">Ethanol</option>
-                    <option value="Benzene">Benzene</option>
-                    <option value="Isopropyl Alcohol">Isopropyl Alcohol</option>
-                    <option value="Methyl Isobutyl Ketone">Methyl Isobutyl Ketone</option>
-                    <option value="Methanol">Methanol</option>
-                    <option value="Toulene">Toulene</option>
-                    <option value="Cleaning Thinner">Cleaning Thinner</option>
-                    <option value="Paint Thinner">Paint Thinner</option>
+                    <!-- Industrial Solvent Products -->
+                    <option class="industrial" value="Acetone">Acetone</option>
+                    <option class="industrial" value="Methylene Dichloride">Methylene Dichloride</option>
+                    <option class="industrial" value="Xylenes">Xylenes</option>
+                    <option class="industrial" value="Ethanol">Ethanol</option>
+                    <option class="industrial" value="Benzene">Benzene</option>
+                    <option class="industrial" value="Isopropyl Alcohol">Isopropyl Alcohol</option>
+                    <option class="industrial" value="Methyl Isobutyl Ketone">Methyl Isobutyl Ketone</option>
+                    <option class="industrial" value="Methanol">Methanol</option>
+                    <option class="industrial" value="Toulene">Toulene</option>
+                    <!-- Retail/Wholesale Solvent Products -->
+                    <option class="retail" value="Cleaning Thinner">Cleaning Thinner</option>
+                    <option class="retail" value="Paint Thinner">Paint Thinner</option>
                 </select>
             </div>
+            
+            
             <textarea name="message" placeholder="Your Message" ></textarea>
             <button type="submit">Submit</button>
         </form>
