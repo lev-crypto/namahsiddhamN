@@ -1,3 +1,18 @@
+import React from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
+const App = () => {
+  return (
+    <div>
+      <h1>Welcome to Speed Insights!</h1>
+      {/* Render the SpeedInsights component */}
+      <SpeedInsights />
+    </div>
+  );
+};
+
+export default App;
+
 function showProductList() {
     const productInterest = document.getElementById('product-interest').value;
     const productListContainer = document.getElementById('product-list-container');
