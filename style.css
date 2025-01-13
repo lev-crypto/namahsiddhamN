@@ -39,7 +39,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(0, 0, 0); /* Default color is black */
+    color: #000000; /* Default color is black */
     text-decoration: none; /* Removes underline from the links */
     font-size: 16px; /* Font size for the links */
     transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for the transform and color changes */
